@@ -14,6 +14,8 @@ local should_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
 	use 'wbthomason/packer.nvim'
 	use 'nvim-treesitter/nvim-treesitter'
+	use 'rktjmp/lush.nvim'
+	use 'metalelf0/jellybeans-nvim'
 
 	if should_bootstrap then
 		require('packer').sync()
