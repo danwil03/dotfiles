@@ -16,6 +16,7 @@ return require('packer').startup(function(use)
 	use 'nvim-treesitter/nvim-treesitter'
 	use 'rktjmp/lush.nvim'
 	use 'metalelf0/jellybeans-nvim'
+    use 'neovim/nvim-lspconfig'
 
 	if should_bootstrap then
 		require('packer').sync()
