@@ -17,6 +17,10 @@ return require('packer').startup(function(use)
 	use 'rktjmp/lush.nvim'
 	use 'metalelf0/jellybeans-nvim'
     use 'neovim/nvim-lspconfig'
+    use 'hrsh7th/cmp-nvim-lsp'
+    use 'hrsh7th/nvim-cmp'
+    use 'L3MON4D3/LuaSnip'
+    use 'saadparwaiz1/cmp_luasnip'
 
 	if should_bootstrap then
 		require('packer').sync()
