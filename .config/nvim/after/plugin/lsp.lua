@@ -38,6 +38,9 @@ local capabilities = require('cmp_nvim_lsp').default_capabilities()
 require('lspconfig').ccls.setup{
     capabilities = capabilities
 }
+require('lspconfig').rust_analyzer.setup{
+    capabilities = capabilities
+}
 
 local cmp = require('cmp')
 
